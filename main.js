@@ -8,11 +8,16 @@ var prepareTable = function () {
 }
 
 var getConfirmation = function (e) {
-  var result = confirm("Have you passed this course?");
-  if(result) {
-    e.target.style.backgroundColor = 'red';
+  var first_result = confirm("Have you taken this course?");
+  var second_result = confirm("Have you passed this course?");
+
+  if(first_result) {
+    e.target.style.backgroundColor = "";
+    if(second_result) {
+      e.target.style.backgroundColor = "red";
+    }
   } else {
-    e.target.style.backgroundColor = '';
+    e.target.style.backgroundColor = "gray";
     alert("Error! You must pass this course first.");
   }
 }
