@@ -37,6 +37,7 @@ for(var i=0; i < sub_codes.length; i++){
     sel.appendChild(opt);
 }*/
 
+
 subjectsRef.on("child_added", snap => {
     let subject = snap.val();
     let $li = document.createElement("li");
@@ -56,6 +57,35 @@ function userClicked(e) {
         $p.innerHTML = snap.key + " : " + snap.val();
         userDetailUI.append($p);
     });
+}
+
+function setName(){
+    var flag = 0;
+    var x = document.getElementById("name").value;
+    document.getElementById("demo").innerHTML = x;
+    const studentsRef = dbRef.child("students");
+
+    dbRef.child("students").orderByChild("name").equalTo(x).once("value",snapshot => {
+        if(snapshot.exists()){
+            //const studentData = snapshot.val();
+            //flag = 1;
+            console.log("DUPE")
+        }
+        else{
+            var userRef = studentsRef.push({
+                name: x
+            });
+        }
+    });
+
+/*
+    if(flag == 0){
+        var userRef = studentsRef.push({
+            name: x
+        });
+        console.log("imong mama");
+    }
+    */
 }
 
 
