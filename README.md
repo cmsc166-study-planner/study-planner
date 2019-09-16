@@ -1,2 +1,2 @@
 # study-planner
-A simple Study Planner
+sign-in
