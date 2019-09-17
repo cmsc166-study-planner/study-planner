@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-  <title>Admin Page</title>
+  <title>Home Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <link rel="stylesheet" type = "text/css" href="main.css">
+  <link rel="stylesheet" type = "text/css" href="css/main.css">
   <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"> 
 </head>
 <body>
   <nav class="navbar navbar-expand-md">
-    <a class="navbar-brand" href="#">Study Planner</a>
+    <a class="navbar-brand" href="#">Course List
+    </a>
     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -23,176 +24,193 @@
         </li>
       </ul>
     </div>
-  </nav>
-  <header class="page-header header container-fluid">
-      <div class="overlay">
-        <div class="overlay"></div>
-        <div class = "table-wrapper-scroll-y my-custom-scrollbar">
-          <table id="coursetable" class="table table-bordered table-hover table-sm " cellspacing="0" width="100%">
-           <thead>
-            <tr>
-              <th scope = "col" class="th-sm">Course No.
-        
-              </th>
-              <th class="th-sm">Course
-        
-              </th>
-              <th class="th-sm">Status
-        
-              </th>
-              <th class="th-sm">Instructor 
-        
-              </th>
-              <th class="th-sm">Room
-        
-              </th>
-              <th class="th-sm">School Year
-        
-              </th>
-            </tr>
-          </thead>
-          <tbody class= 'clickable-row' data-href = 'studentlist.html'>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10001</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-            <tr>
-              <td>10121</td>
-              <td>CMSC #</td>
-              <td>Open</td>
-              <td>Staff</td>
-              <td>TBA</td>
-              <td>2019-2020</td>
-            </tr>
-          </tbody> 
-        </table>
+    </nav> 
+    <div class="row">
+      <div class="col-md-6 col-md-6">
+        <div class="dataTables_length bs-select" id="dtBasicExample_length">
+          <label class="control-label col-md-6">Show entries
+            <select name="dtBasicExample_length" aria-controls="dtBasicExample" class="custom-select custom-select-sm form-control form-control-sm">
+              <option value="10">10</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select> 
+          </label>
+        </div>
       </div>
-    </div> 
-  </header>   
+      <div class="col-sm-12 col-md-6">
+        <div id="dtBasicExample_filter" class="dataTables_filter">
+          <label class="control-label col-md-6">Search:
+            <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dtBasicExample">
+          </label>
+        </div>
+      </div>
+    </div>
+    <div>     
+        <table id="coursetable" class="table table-hover" cellspacing="0" width="100%">
+          <thead>
+          <tr>
+            <th scope = "col" class="th-sm">Course No.
+      
+            </th>
+            <th class="th-sm">Course
+      
+            </th>
+            <th class="th-sm">Status
+      
+            </th>
+            <th class="th-sm">Instructor 
+      
+            </th>
+            <th class="th-sm">Room
+      
+            </th>
+            <th class="th-sm">School Year
+      
+            </th>
+          </tr>
+        </thead>
+        <tbody class= 'clickable-row' data-href = 'studentlist.html'>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>10121</td>
+            <td>CMSC #</td>
+            <td>Open</td>
+            <td>Staff</td>
+            <td>TBA</td>
+            <td>2019-2020</td>
+          </tr>
+        </tbody> 
+      </table> 
+    </div>  
+  </div>
                 
   <script src="jquery-3.4.1.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script> 
