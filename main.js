@@ -1,6 +1,14 @@
 $(document).ready(function(){
     $('.header').height($(window).height());
   })
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#listTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
   function adminlog() {
     location.replace("adminlog.html")
   }
