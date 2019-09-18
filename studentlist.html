@@ -13,35 +13,29 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="main-navigation">
-          <ul class="navbar-nav"> 
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="studentcent()">Return</a>
-          </li> 
+          <ul class="navbar-nav">    
+            <form class="form-inline">
+                <div class="form-group mr-2">
+                    <label class="control-label col-md-10">Show&nbsp;&nbsp;
+                        <select name="dtBasicExample_length" aria-controls="dtBasicExample" class="custom-select custom-select-sm form-control form-control-sm">
+                          <option value="10">10</option>
+                          <option value="25">25</option>
+                          <option value="50">50</option>
+                          <option value="100">100</option>
+                        </select> 
+                        &nbsp;entries
+                      </label>
+                </div>
+                <div class="form-group mr-2">  
+                    <label class="control-label ">Search:&nbsp;&nbsp;  
+                      <input id = "myInput" type="search" class="form-control form-control-sm" placeholder="" aria-controls="dtBasicExample">
+                    </label>    
+                </div> 
+            </form>  
           </ul>
         </div>
       </nav>
       
-      <div class="row">
-          <div class="col-md-2 col-md-6">
-            <div class="dataTables_length bs-select" id="dtBasicExample_length">
-              <label class="control-label col-md-6">Show entries
-                <select name="dtBasicExample_length" aria-controls="dtBasicExample" class="custom-select custom-select-sm form-control form-control-sm">
-                  <option value="10">10</option>
-                  <option value="25">25</option>
-                  <option value="50">50</option>
-                  <option value="100">100</option>
-                </select> 
-              </label>
-            </div>
-          </div>
-          <div class= "col-md-6 col-md-6">
-            <div id="dtBasicExample_filter" class="dataTables_filter">
-              <label class="control-label col-md-6">Search:
-                <input id = "myInput" type="search" class="form-control form-control-sm" placeholder="" aria-controls="dtBasicExample">
-              </label>
-            </div>
-          </div>
-        </div>
       <div >      
         <table id="listTable" class="table table-striped">
           <thead>
