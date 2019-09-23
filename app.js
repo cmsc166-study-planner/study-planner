@@ -13,30 +13,7 @@ firebase.initializeApp(firebaseConfig);
 const dbRef = firebase.database().ref();
 const subjectsRef = firebase.database().ref("subjects/");
 const userListUI = document.getElementById("userList");
-
-//const subjectsRef = dbRef.child('subjects');
-/*
-subjectsRef.on("value", function(snapshot) {
-    console.log(snapshot.val());
-}, function (error) {
-    console.log("Error: " + error.code);
-});*/
-/*
-var sub_codes=[];
-subjectsRef.orderByKey().on("child_added", function(data){
-    console.log(data.val().code);
-    //sub_codes.push(data.val().code);
-});
-console.log(sub_codes);
-
-var sel = document.getElementById('SubjectsList');
-for(var i=0; i < sub_codes.length; i++){
-    var opt = document.createElement('option');
-    opt.innerHTML = sub_codes[i];
-    opt.value = sub_codes[i];
-    sel.appendChild(opt);
-}*/
-
+var studentName = "sample";
 
 subjectsRef.on("child_added", snap => {
     let subject = snap.val();
@@ -57,36 +34,83 @@ function userClicked(e) {
         $p.innerHTML = snap.key + " : " + snap.val();
         userDetailUI.append($p);
     });
+
+    //updating the list of students under subjects, NO DUPLICATES
+    //every student has a unique idea para dili gubot inig delete
+    //other method kay name1, name 2, name n, etc, (NOT)
+
+    if(studentName != "sample"){
+        const subjectStudentRef = dbRef.child('subjects/' + userID +'/studentsTaken');
+
+        subjectStudentRef.orderByChild("name").equalTo(studentName).once("value", snapshot => {
+            if(snapshot.exists()){
+                console.log("Student is already on the list");
+            }
+            else{
+                var a = subjectStudentRef.push({
+                    name: studentName
+                });
+                console.log("SUBJECT TAKEN");
+            }
+        });
+    }
+    else console.log("YOU HAVE TO LOG IN FIRST");
+
+    console.log("Hello "+ studentName);
+
+
 }
 
 function setName(){
+    //pushing the name of the logged in person. NO DUPLICATES
     var flag = 0;
     var x = document.getElementById("name").value;
-    document.getElementById("demo").innerHTML = x;
+    studentName = x;
+    //document.getElementById("demo").innerHTML = x;
     const studentsRef = dbRef.child("students");
 
     dbRef.child("students").orderByChild("name").equalTo(x).once("value",snapshot => {
         if(snapshot.exists()){
-            //const studentData = snapshot.val();
-            //flag = 1;
             console.log("DUPE")
         }
         else{
             var userRef = studentsRef.push({
                 name: x
             });
+            console.log("New student name pushed");
+        }
+    });
+}
+
+function studentList(){
+    var x = document.getElementById("subject").value;
+    const subjectStudentRef = dbRef.child("subjects");
+    const studentListUI = document.getElementById("studList");
+    studentListUI.innerHTML = "";
+
+    dbRef.child("subjects").orderByChild("code").equalTo(x).once("value", snapshot => {
+        if(snapshot.exists()){
+            snapshot.forEach(function(childSnapshot) {
+                childSnapshot.forEach(function(listSnapshot){
+                    let obj = listSnapshot.val();
+                    for(let key in obj){
+                        if(obj[key].name != undefined){
+                            console.log(obj[key].name);
+                            let $li = document.createElement("li");
+                            $li.innerHTML = obj[key].name;
+                            studentListUI.append($li);
+                        }
+                    }
+
+                    //console.log(childSnapshot.key+" - "+listSnapshot.key+": "+listSnapshot.val());
+                });
+            });
+        }
+        else{
+            console.log("The subject does not exist")
         }
     });
 
-/*
-    if(flag == 0){
-        var userRef = studentsRef.push({
-            name: x
-        });
-        console.log("imong mama");
-    }
-    */
 }
-
 
 

@@ -9,13 +9,15 @@
     </h1>
     Name: <input type="text" id="name">
     <button onclick="setName()">Login</button>
-    <p id="demo"></p>
-
+    <!-- <p id="demo"></p> -->
     <ul id="userList"></ul>
     <div id="userDetail">
     </div>
-    <br>Click button if you've taken the subject
-    <button type="submit"> Completed </button>
+    <p>List of students enrolled/not enrolled in a subject</p>
+    Subject: <input type="text" id="subject">
+    <button onclick="studentList()">Search</button>
+    <ul id="studList"></ul>
+
     <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
     <script type="text/javascript" src="app.js"></script>
