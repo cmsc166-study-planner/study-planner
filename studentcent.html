@@ -41,173 +41,37 @@
          
         <table id="listTable" class="table table-hover" cellspacing="0" width="100%">
           <thead>
-          <tr>
-            <th scope = "col" class="th-sm" aria-controls="dtBasicExample" aria-label="Position
-            : activate to sort column ascending">Course No.
+          <tr> 
+            <th class="th-sm">Code
       
             </th>
-            <th class="th-sm">Course
+            <th class="th-sm">Name
       
             </th>
-            <th class="th-sm">Status
+            <th class="th-sm">Students Taken
       
             </th>
-            <th class="th-sm">Instructor 
+            <th class="th-sm">Type
       
             </th>
-            <th class="th-sm">Room
-      
-            </th>
-            <th class="th-sm">School Year
+            <th class="th-sm">unit
       
             </th>
           </tr>
         </thead>
-        <tbody class= 'clickable-row' data-href = 'studentlist.html'>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC 166</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Closed</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10001</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
-          <tr>
-            <td>10121</td>
-            <td>CMSC #</td>
-            <td>Open</td>
-            <td>Staff</td>
-            <td>TBA</td>
-            <td>2019-2020</td>
-          </tr>
+        <tbody id="courserows" class= 'clickable-row' data-href = 'studentlist.html'>
+              
         </tbody> 
       </table> 
     </div>  
   </section>
   </div>
-                
+   
+  <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>             
   <script src="jquery-3.4.1.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script> 
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> 
   <script src="main.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
