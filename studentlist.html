@@ -5,46 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <link rel="stylesheet" type = "text/css" href="css/main.css">
   <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="#">Stubject Name</a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main-navigation">
-          <ul class="navbar-nav">    
-            <form class="form-inline">
-                <div class="form-group mr-2">
-                    <label class="control-label col-md-10">Show&nbsp;&nbsp;
-                        <select name="dtBasicExample_length" aria-controls="dtBasicExample" class="custom-select custom-select-sm form-control form-control-sm">
-                          <option value="10">10</option>
-                          <option value="25">25</option>
-                          <option value="50">50</option>
-                          <option value="100">100</option>
-                        </select> 
-                        &nbsp;entries
-                      </label>
-                </div>
-                <div class="form-group mr-2">  
-                    <label class="control-label ">Search:&nbsp;&nbsp;  
-                      <input id = "myInput" type="search" class="form-control form-control-sm" placeholder="" aria-controls="dtBasicExample">
-                    </label>    
-                </div> 
-            </form>  
-          </ul>
-        </div>
-      </nav>
+<body>   
       
-      <div >             
-        <button class="btn btn-outline-secondary btn-lg">Completed</button>
-        <button class="btn btn-outline-secondary btn-lg">Not taken</button>     
-        <table id="listTable" class="table table-striped">
+      <div >                 
+        <table id="list-table" class="table table-striped">
           <thead>
             <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Email</th>
+              <th>Status</th>
+              <th>Course Name</th> 
             </tr>
           </thead>
           <tbody id = "studentrows">
@@ -53,10 +23,12 @@
         </table>
       </div> 
       
+  
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
-  <script src="jquery-3.4.1.min.js"></script>
   <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> 
-  <script src="main.js"></script>
-  <script src="app.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script src="main.js"></script> 
 </body>

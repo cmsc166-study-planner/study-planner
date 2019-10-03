@@ -10,17 +10,19 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const dbRef = firebase.database().ref();
-const subjectsRef = firebase.database().ref("subjects/");
-const studentsRef = firebase.database().ref("students/")
+const subjectsRef = firebase.database().ref("subjects/"); 
+const subTaken = firebase.database().ref("subjectsTaken/");
+const studentsRef = firebase.database().ref("students/");
 const userListUI = document.getElementById("userList");
  
 
 var database = firebase.database();
 
 subjectsRef.on('value', function(snapshot) { 
-  var content = '';
+  var content = ''; 
   snapshot.forEach(function(childSnapshot){ 
     var value = childSnapshot.val();  
+    //console.log(value);
     content += '<tr>';
     content += '<td>' + value.code + '</td>'; 
     content += '<td>' + value.name + '</td>';
@@ -32,15 +34,16 @@ subjectsRef.on('value', function(snapshot) {
   $('#courserows').append(content); 
 });
 
-studentsRef.on('value', function(snapshot) { 
+subTaken.on('value', function(snapshot) { 
   var content = '';
   snapshot.forEach(function(childSnapshot){ 
     var value = childSnapshot.val();    
-      content += '<tr>';
-      content += '<td>' + value.name + '</td>'; 
-      content += '<td>' +  " " + '</td>';
+    console.log(value);  
+      content += '<tr>'; 
+      content += '<td>' + value + '</td>'; 
+      content += '<td>' +  " " + '</td>'; 
       content += '<td>' + " " + '</td>'; 
-      content += '</tr>'; 
+      content += '</tr>';  
   });
   $('#studentrows').append(content); 
 }); 
