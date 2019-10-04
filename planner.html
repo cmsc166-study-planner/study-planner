@@ -2,123 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 6px;
-            empty-cells: hide;
-        }
-        table {
-            cursor: text;
-        }
-        td {
-            cursor: default;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Study Planner</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
-    <table id="courses">
+    <table id="courses" align="center">
         <tr>
-            <th>1.1</th>
-            <th>1.2</th>
-            <th>2.1</th>
-            <th>2.2</th>
-            <th>3.1</th>
-            <th>3.2</th>
-            <th>3.3</th>
-            <th>4.1</th>
-            <th>4.2</th>
+            <th id="one-first-sem">1.1</th>
+            <th id="one-second-sem">1.2</th>
+            <th id="two-first-sem">2.1</th>
+            <th id="two-second-sem">2.2</th>
+            <th id="three-first-sem">3.1</th>
+            <th id="three-second-sem">3.2</th>
+            <th id="three-third-sem">3.3</th>
+            <th id="four-first-sem">4.1</th>
+            <th id="four-second-sem">4.2</th>
         </tr>
         <tr>
-            <td>CMSC 11</td>
-            <td>CMSC 21</td>
-            <td>CMSC 23</td>
-            <td>CMSC 141</td>
-            <td>CMSC 124</td>
-            <td>CMSC 170</td>
-            <td>CMSC 195</td>
-            <td>CMSC 173</td>
-            <td>CMSC 196</td>
+            <td id="cs-11">CMSC 11</td>
+            <td id="cs-21">CMSC 21</td>
+            <td id="cs-123">CMSC 123</td>
+            <td id="cs-141">CMSC 141</td>
+            <td id="cs-124">CMSC 124</td>
+            <td id="cs-170">CMSC 170</td>
+            <td id="cs-195">CMSC 195</td>
+            <td id="cs-173">CMSC 173</td>
+            <td id="cs-196">CMSC 196</td>
         </tr>
         <tr>
-            <td>CMSC 56</td>
-            <td>CMSC 57</td>
-            <td>CMSC 130</td>
-            <td>CMSC 133</td>
-            <td>CMSC 142</td>
-            <td>CMSC 125</td>
-            <td rowspan="8">&nbsp;</td>
-            <td>CMSC 137</td>
-            <td>CS Elective</td>
+            <td id="cs-56">CMSC 56</td>
+            <td id="cs-57">CMSC 57</td>
+            <td id="cs-130">CMSC 130</td>
+            <td id="cs-133">CMSC 133</td>
+            <td id="cs-142">CMSC 142</td>
+            <td id="cs-125">CMSC 125</td>
+            <td class="empty" rowspan="8"></td>
+            <td id="cs-137">CMSC 137</td>
+            <td id="cs-elective-1">CS Elective</td>
         </tr>
         <tr>
-            <td>MATH 53</td>
-            <td>MATH 54</td>
-            <td>CMSC 23</td>
-            <td>CMSC 127</td>
-            <td>CMSC 128</td>
-            <td>CMSC 129</td>
-            <td>CS Elective</td>
-            <td>Free Elective</td>
+            <td id="math-53">MATH 53</td>
+            <td id="math-54">MATH 54</td>
+            <td id=cs-23>CMSC 23</td>
+            <td id="cs-127">CMSC 127</td>
+            <td id="cs-128">CMSC 128</td>
+            <td id="cs-129">CMSC 129</td>
+            <td id="cs-elective-2">CS Elective</td>
+            <td id="free-elective-1">Free Elective</td>
         </tr>
         <tr>
-            <td>STAT 123</td>
-            <td>PHYS 81</td>
-            <td>MATH 55</td>
-            <td>CMSC 106</td>
-            <td>CMSC 110</td>
-            <td>CS Elective</td>
-            <td>CS Elective</td>
-            <td>CMSC 134</td>
+            <td id="stat-123">STAT 123</td>
+            <td id="phys-81">PHYS 81</td>
+            <td id="math-55">MATH 55</td>
+            <td id="cs-106">CMSC 106</td>
+            <td id="cs-110">CMSC 110</td>
+            <td id="cs-elective-3">CS Elective</td>
+            <td id="cs-elective-4">CS Elective</td>
+            <td id="cs-134">CMSC 134</td>
         </tr>
         <tr>
-            <td>KAS 1</td>
-            <td>PHYS 81.1</td>
-            <td>PHYS 82</td>
-            <td>Arts 1</td>
-            <td>CMSC 192</td>
-            <td>CMSC 194.2</td>
-            <td>Special Problem 1</td>
-            <td>Special Problem 2</td>
+            <td id="kas-1">KAS 1</td>
+            <td id="phys-811">PHYS 81.1</td>
+            <td id="phys-82">PHYS 82</td>
+            <td id="arts-1">Arts 1</td>
+            <td id="cs-192">CMSC 192</td>
+            <td id="cs-1942">CMSC 194.2</td>
+            <td id="sp-1">Special Problem 1</td>
+            <td id="sp-2">Special Problem 2</td>
         </tr>
         <tr>
-            <td>SAS 1</td>
-            <td>Comm 10</td>
-            <td>PHYS 82.1</td>
-            <td>Math 10</td>
-            <td>CMSC 194.1</td>
-            <td>PI 100</td>
-            <td>GE Elective</td>
-            <td>GE Elective</td>
+            <td id="sas-1">SAS 1</td>
+            <td id="comm-10">Comm 10</td>
+            <td id="phys-821">PHYS 82.1</td>
+            <td id="math-10">Math 10</td>
+            <td id="cs-1941">CMSC 194.1</td>
+            <td id="pi-100">PI 100</td>
+            <td id="ge-elective-1">GE Elective</td>
+            <td id="ge-elective-2">GE Elective</td>
         </tr>
         <tr>
-            <td>PE 2</td>
-            <td>Science 11</td>
-            <td>Ethics 1</td>
-            <td>PE 2</td>
-            <td>STS 1</td>
-            <td>GE Elective</td>
-            <td rowspan="3">&nbsp;</td>
-            <td rowspan="3">&nbsp;</td>
+            <td id="pe-2-1">PE 2</td>
+            <td id="sci-11">Science 11</td>
+            <td id="ethics-1">Ethics 1</td>
+            <td id="pe-2-4">PE 2</td>
+            <td id="sts-1">STS 1</td>
+            <td id="ge-elective-3">GE Elective</td>
+            <td class="empty" rowspan="3"></td>
+            <td class="empty" rowspan="3"></td>
         </tr>
         <tr>
-            <td>NSTP 1</td>
-            <td>PE 2</td>
-            <td>PE 2</td>
-            <td rowspan="2">&nbsp;</td>
-            <td>GE Elective</td>
-            <td rowspan="2">&nbsp;</td>
+            <td id="nstp-1">NSTP 1</td>
+            <td id="pe-2-2">PE 2</td>
+            <td id="pe-2-3">PE 2</td>
+            <td class="empty" rowspan="2"></td>
+            <td id="ge-elective-4">GE Elective</td>
+            <td class="empty" rowspan="2"></td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>NSTP 2</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="empty"></td>
+            <td id="nstp-2">NSTP 2</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
         </tr>
     </table>
     <br />
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
