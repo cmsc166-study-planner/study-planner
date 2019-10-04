@@ -66,6 +66,7 @@ body {
    .table {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
+    table-layout: fixed; 
     width: 100%;
   }
   
