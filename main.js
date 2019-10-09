@@ -9,39 +9,30 @@ var firebaseConfig = {
 }; 
 firebase.initializeApp(firebaseConfig);
 
-const dbRef = firebase.database().ref();
+const ref = firebase.database().ref();
 const subjectsRef = firebase.database().ref("subjects/");  
 const studentsRef = firebase.database().ref("students/");
 const userListUI = document.getElementById("userList");
 
 
 var database = firebase.database();
-  
-subjectsRef.on('value', function(snapshot) { 
+
+ref.child('gradeItem').orderByChild('course').on('value', function(snapshot) {
+  console.log(snapshot.val());
+});
+/*dbRef.on('value', function(snapshot) {  
   var content = "";
   snapshot.forEach(function(childSnapshot){ 
-    var value = childSnapshot.val();  
-    content += '<tr>';
-    content += '<td>' + value.code + '</td>';  
-    content += '<td>' + "check" + '</td>';  
-    content += '<td>' + value.code + '</td>';  
-    content += '<td>' + "check" + '</td>'; 
-    content += '<td>' + value.code + '</td>';  
-    content += '<td>' + "check" + '</td>';  
-    content += '<td>' + value.code + '</td>';  
-    content += '<td>' + "check" + '</td>'; 
-    content += '<td>' + value.code + '</td>';  
-    content += '<td>' + "check" + '</td>';  
-    content += '<td>' + value.code + '</td>';  
-    content += '<td>' + "check" + '</td>'; 
-    content += '<td>' + value.code + '</td>';  
-    content += '<td>' + "check" + '</td>';  
-    content += '<td>' + value.code + '</td>';  
-    content += '<td>' + "check" + '</td>'; 
-    content += '</tr>'; 
-  });
-  $('#courserows').append(content); 
-});
+    childSnapshot.forEach(function(childSnapshot){
+      childSnapshot.forEach(function(listSnapshot){
+        let obj = listSnapshot.val();   
+        console.log(obj);
+      }); 
+    });
+    //var value = childSnapshot.val();  
+    //console.log(value); 
+  });  
+});*/
 /*function courseList(){        
   var tableBody = document.getElementById("courserows");
   dbRef.child("subjects").orderByChild("code").on("value", snapshot => {
