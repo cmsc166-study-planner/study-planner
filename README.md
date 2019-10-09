@@ -1,2 +1,4 @@
 # study-planner
-A simple Study Planner
+sign-in
+
+just pull files(login, main, and firebase)
