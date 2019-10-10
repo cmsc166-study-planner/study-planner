@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Admin Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <!--<link rel="stylesheet" type = "text/css" href="css/main.css">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">-->
+</head>
+<body>   
+      
+      <div >                 
+        <table id="student-table" class="table table-hover">
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Course Name</th> 
+              <!--<th onclick="studentList('SAS 1')">Status</th>-->
+            </tr>
+          </thead>
+          <tbody id = "student-rows">
+               
+          </tbody>
+        </table>
+      </div> 
+      
+  <script> 
+    window.onload = function() { 
+      studentList(localStorage.getItem("subname"));
+    }; 
+  </script>
+  <!--<script src="jquery-3.4.1.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+  <!--<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>-->
+  <script src="main.js"></script> 
+</body>
