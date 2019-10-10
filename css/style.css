@@ -13,3 +13,7 @@ td {
 .empty {
     pointer-events: none;
 }
+.button {
+  margin:auto;
+  display:block;
+}
