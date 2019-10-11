@@ -23,7 +23,9 @@ ui.start('#firebaseui-auth-container', uiConfig);
   signInSuccessUrl: 'main.html',
   signInOptions: [
 //     // Leave the lines as is for the providers you want to offer your users.
-    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID
+
+    //firebase.auth().signInWithPopup(provider),
   ],
 //   // Terms of service url.
   tosUrl: '<main.html>',

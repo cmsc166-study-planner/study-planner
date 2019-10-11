@@ -1,16 +1,16 @@
 var app_firebase = {};
 (function(){
 	// initialize firebase
-	var firebaseConfig = {
-   		apiKey: "AIzaSyB5gl6AEdx9V6p91Vv-Q1JwLgXx1MDe5pU",
-   	 	authDomain: "login-javascript-e5e24.firebaseapp.com",
-    	databaseURL: "https://login-javascript-e5e24.firebaseio.com",
-    	projectId: "login-javascript-e5e24",
-    	storageBucket: "login-javascript-e5e24.appspot.com",
-    	messagingSenderId: "768767598975",
-    	appId: "1:768767598975:web:05f7d402e0292b7cdc3a4a",
-    	measurementId: "G-EPGS5Y0QQ5"
- 	};
+	const firebaseConfig = {
+    apiKey: "AIzaSyAYkKT_7D8Q8Xc2fMUxGnlEaUMCTmkZvTY",
+    authDomain: "cmsc166v2.firebaseapp.com",
+    databaseURL: "https://cmsc166v2.firebaseio.com",
+    projectId: "cmsc166v2",
+    storageBucket: "cmsc166v2.appspot.com",
+    messagingSenderId: "360366352461",
+    appId: "1:360366352461:web:5d16f66cc1dfbcfed3d404",
+    measurementId: "G-4MGKXGBZ31"
+  };
   	firebase.initializeApp(firebaseConfig);	
 
   	app_firebase = firebase;

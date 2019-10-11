@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>main</title>
+	<meta charset="UTF-8">
+	<!-- <title>main</title> -->
 	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 	<script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
 	<script src="http://www.w3schools.com/lib/w3data.js"></script>
 	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Study Planner</title>
+    <link href="../../166project/style.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -20,13 +25,13 @@
 		function logout(){
 			firebase.auth().signOut().then(function() {
   				// Sign-out successful.
-  				window.alert("Sign-out successful.");
+  				window.location.assign('https://accounts.google.com/logout');
+  				//window.alert("Sign-out successful.");
 				}).catch(function(error) {
  				 // An error happened.
 			});
 		}
 		
-
 	</script>
 
 	<script src="firebase.js"></script>

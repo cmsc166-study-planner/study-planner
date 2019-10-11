@@ -1,2 +1,0 @@
-# study-planner
-integrated version
