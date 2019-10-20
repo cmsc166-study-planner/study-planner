@@ -37,7 +37,7 @@ ui.start('#firebaseui-auth-container', uiConfig);
 
 
 function admin(){
-  window.open('admin.html');
+  location.href = "admin.html";
 }
 
 
