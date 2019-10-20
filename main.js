@@ -1,17 +1,17 @@
 (function(){
-	firebase.auth().onAuthStateChanged(function(user) {
-  		if (user) {
-  		  // User is signed in.
-  		 	name = user.displayName;
-  			email = user.email;
-  			photoUrl = user.photoURL;
-  			emailVerified = user.emailVerified;
-  			uid = user.uid;
+  firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        // User is signed in.
+        name = user.displayName;
+        email = user.email;
+        photoUrl = user.photoURL;
+        emailVerified = user.emailVerified;
+        uid = user.uid;
 
-  			// window.alert(name);
+        // window.alert(name);
 
-  			document.getElementById("user").innerHTML = user.displayName;
-  			document.getElementById("avatar").setAttribute("src", user.photoURL);
+        document.getElementById("user").innerHTML = user.displayName;
+        document.getElementById("avatar").setAttribute("src", user.photoURL);
 
             const dbRef = firebase.database().ref();
             const subjectsRef = firebase.database().ref("subjects/");
@@ -82,9 +82,9 @@
                 });
             }, 1500); //10 seconds 
 
- 		} else {
-  		  // No user is signed in.
-  		}
-	});
-	
+    } else {
+        // No user is signed in.
+      }
+  });
+  
 })()

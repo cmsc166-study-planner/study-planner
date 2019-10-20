@@ -1,7 +1,7 @@
 var app_firebase = {};
 (function(){
-	// initialize firebase
-	const firebaseConfig = {
+  // initialize firebase
+  const firebaseConfig = {
     apiKey: "AIzaSyAYkKT_7D8Q8Xc2fMUxGnlEaUMCTmkZvTY",
     authDomain: "cmsc166v2.firebaseapp.com",
     databaseURL: "https://cmsc166v2.firebaseio.com",
@@ -11,7 +11,7 @@ var app_firebase = {};
     appId: "1:360366352461:web:5d16f66cc1dfbcfed3d404",
     measurementId: "G-4MGKXGBZ31"
   };
-  	firebase.initializeApp(firebaseConfig);	
+    firebase.initializeApp(firebaseConfig); 
 
-  	app_firebase = firebase;
+    app_firebase = firebase;
 })()
