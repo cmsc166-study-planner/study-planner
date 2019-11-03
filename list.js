@@ -1,0 +1,45 @@
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+const dbRef = firebase.database().ref();
+var flag = 0;
+var mycourse = getUrlVars()["course"];
+//console.log(mycourse);
+mycourse = mycourse.replace(/-/g, ' ');
+document.getElementById('course_name').innerHTML = mycourse;
+
+const studentListUI = document.getElementById("studentList");
+
+dbRef.child("students").once('value', function (snapshot){
+	let student_obj = snapshot.val();
+	for(let key in student_obj){
+		//console.log("Original student"+ student_obj[key].name);
+		//get list of students of a subject
+		dbRef.child("subjects").orderByChild("code").equalTo(mycourse).once("value", subjectsnapshot => {
+			if(subjectsnapshot.exists()){
+				var key1 = Object.keys(subjectsnapshot.val())[0];
+				const subjectStudentRef = dbRef.child('subjects/' + key1 +'/studentsTaken');
+				subjectStudentRef.once('value', function (subjectStudentsnapshot){
+					let student_list = subjectStudentsnapshot.val();
+					for(let key2 in student_list){
+						if(student_obj[key].name == student_list[key2].name){
+							flag = 1;
+						}					
+					}
+					if(flag == 0){
+						let $li = document.createElement("li");
+						$li.innerHTML = student_obj[key].name;
+						studentListUI.append($li);
+						//console.log(student_obj[key].name);
+					}
+					flag = 0;
+				});
+			}
+		});
+	} 
+});
