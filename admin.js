@@ -1,7 +1,7 @@
 
 var counter = 0;
 const dbRef = firebase.database().ref();
-
+var test = 0; //
 var count = 0;
 
 dbRef.child("students").once('value', function (snapshot){
@@ -10,7 +10,7 @@ dbRef.child("students").once('value', function (snapshot){
 		count++;
 	}
 });
-
+//
 //list of subjects
 dbRef.child("subjects").once('value', function (subjectsnapshot){
 	let subject_obj = subjectsnapshot.val();
