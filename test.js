@@ -3,6 +3,7 @@ describe("study planner automation", function(){
     browser.ignoreSynchronization=true; 
     browser.manage().timeouts().implicitlyWait(50000);
     it("Go to the Loginpage", function(){
+        //browser.get(" ");
         browser.get("https://cmsc166v2.firebaseapp.com/");
         console.log("\tLogin page opened.");
         browser.sleep(1000);
@@ -83,15 +84,8 @@ describe("study planner automation", function(){
         button.click().then(function(){
             console.log("logged out");
         });
-        browser.sleep(5000);
+        browser.sleep(7000);
         browser.close();
     });
-    /**
-     * 2. after login show table (assuming the email is identified as a student) 
-
-if student has no classes taken show bare table (dili ko kahibaw if we have to say na student has taken no classes instead of a table) 
-
-else
-show table where names sa classes gi take sa students kay colored
-     */
+    
 });

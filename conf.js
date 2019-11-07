@@ -1,7 +1,7 @@
  
 exports.config = {
     directConnect: true, 
-    /*aseUrl: 'C:/Users/Mama Inday/Desktop/study-planner/login.html',
+    /*baseUrl: 'C:/Users/Mama Inday/Desktop/study-planner/login.html',
     onPrepare: function(){
         browser.resetUrl = 'file://';
     },*/
