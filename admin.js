@@ -8,8 +8,7 @@ dbRef.child("students").once('value', function (snapshot){
 	for(let key in students){
 		count++;
 	}
-}); 
-return 0    asdfasdfasdf
+});  
 //list of subjects  
 dbRef.child("subjects").once('value', function (subjectsnapshot){
 	let subject_obj = subjectsnapshot.val();
