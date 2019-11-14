@@ -14,5 +14,5 @@ exports.config = {
         }
     },
     framework: 'jasmine2',
-    specs: ['test.js']
+    specs: ['uitest.js']
 };
