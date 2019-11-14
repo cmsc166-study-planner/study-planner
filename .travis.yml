@@ -1,3 +1,12 @@
 language: node_js
 node_js:
   - 6.4.1
+
+notifications:
+  email: 
+    recipients:
+      - jayfr.dc@gmail.com
+      - jfcomparativo@up.edu.ph
+    
+    on_success: always
+    on_failure: always
