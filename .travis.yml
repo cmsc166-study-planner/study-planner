@@ -1,9 +1,12 @@
 language: node_js 
 
 node_js:
-  - "0.10.45"
-
-sudo: required
+  - "stable"
+ 
+cache: 
+  directories:
+    - "node_modules"
+    
 notifications:
   email: 
     recipients:
