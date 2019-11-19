@@ -4,12 +4,21 @@
   <title>Home Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" type = "text/css" href="css/main.css">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">  
 </head>
 <body> 
+    <button class="trigger">Click here to trigger the modal!</button>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Hello, I am a modal!</h1>
+        </div>
+    </div>
+    
     <section> 
          
-        <table id="course-table" border="1" style="border: 1px solid black; border-collapse: collapse;" class="table table-hover" cellspacing="0" width="100%" >
+        <table id="course-table"  class="table table-hover popup-trigger" cellspacing="0" width="100%" >
             <col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col>
           <thead>
           <tr> 
@@ -191,10 +200,12 @@
     </div>  
   </section>
   </div>
-                  
+ 
+    
+    
   <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>  
   <script src="firebase.js"></script>
-  <script src="admin.js"></script>  
+  <script src="admin.js"></script>   
 </body>
 </html>
