@@ -21,7 +21,7 @@ describe("study planner automation", function(){
         browser.actions().mouseMove(element(by.id("cs125"))).perform(); 
         browser.sleep(700);
         test1.click();
-        browser.sleep(2000);
+        browser.sleep(3300);
         browser.navigate().back(); 
         browser.sleep(1000);
         browser.actions().mouseMove(element(by.id("nstp"))).perform(); 
@@ -33,7 +33,7 @@ describe("study planner automation", function(){
         browser.actions().mouseMove(element(by.id("cs192"))).perform(); 
         browser.sleep(700);
         test2.click();
-        browser.sleep(2000);
+        browser.sleep(3300);
         browser.navigate().back();
         browser.sleep(1200);
         browser.navigate().back();
@@ -88,6 +88,7 @@ describe("study planner automation", function(){
     it("Main test(to edit)", function(){
         browser.get("C:/Users/Mama Inday/Desktop/study-planner/main.html");
         browser.sleep(2100);
+        
        /* browser.executeScript('window.scrollTo(0,document.body.scrollHeight)').then(function(){ 
             browser.sleep(1000);
             browser.executeScript('window.scrollTo(0,0)');
@@ -106,6 +107,9 @@ describe("study planner automation", function(){
         browser.actions().mouseMove(element(by.id("avatar"))).perform(); 
         browser.sleep(700); */
         browser.get("C:/Users/Mama Inday/Desktop/study-planner/index.html");
+        browser.sleep(2000);
+        var login = element(by.className("firebaseui-idp-button"));
+        login.click();
         browser.sleep(2000);
     });
     /*it("logout", function(){
