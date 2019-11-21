@@ -7,17 +7,8 @@
   <link rel="stylesheet" type = "text/css" href="css/main.css">
   <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">  
 </head>
-<body> 
-    <button class="trigger">Click here to trigger the modal!</button>
-    <div class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h1>Hello, I am a modal!</h1>
-        </div>
-    </div>
-    
-    <section> 
-         
+<body>  
+    <section>  
         <table id="course-table"  class="table table-hover popup-trigger" cellspacing="0" width="100%" >
             <col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col>
           <thead>
@@ -42,11 +33,11 @@
               <td id= "CMSC-130">  </td>
               <td onclick="studentList('CMSC-133')"> CMSC 133 </td>
               <td id= "CMSC-133">  </td>
-              <td onclick="studentList('CMSC-192')"> CMSC 192 </td>
+              <td onclick="studentList('CMSC-192')" id = "cs192"> CMSC 192 </td>
               <td id= "CMSC-192">  </td> 
-              <td onclick="studentList('CMSC-125')"> CMSC 125 </td>
+              <td onclick="studentList('CMSC-125')" id = "cs125"> CMSC 125 </td>
               <td id= "CMSC-125">  </td>
-              <td onclick="studentList('CMSC-137')"> CMSC 137 </td>
+              <td onclick="studentList('CMSC-137')" id = "cs137"> CMSC 137 </td>
               <td id= "CMSC-137">  </td>
               <td onclick="studentList('CMSC-134')"> CMSC 134 </td>
               <td id= "CMSC-134">  </td>
@@ -60,7 +51,7 @@
               <td id= "CMSC-23">  </td>
               <td onclick="studentList('CMSC-127')"> CMSC 127 </td>
               <td id= "CMSC-127">  </td>
-              <td onclick="studentList('CMSC-110')"> CMSC 110 </td>
+              <td onclick="studentList('CMSC-110')" id ="cs110"> CMSC 110 </td>
               <td id= "CMSC-110">  </td> 
               <td onclick="studentList('CMSC-129')"> CMSC 129 </td>
               <td id= "CMSC-129">  </td>
@@ -180,7 +171,7 @@
             <tr>
               <td>  </td>
               <td>  </td>
-              <td onclick="studentList('NSTP-2')"> NSTP 2 </td>
+              <td onclick="studentList('NSTP-2')" id = "nstp"> NSTP 2 </td>
               <td id= "NSTP-2">  </td>
               <td>  </td>
               <td>  </td>
@@ -205,7 +196,8 @@
     
   <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>  
-  <script src="firebase.js"></script>
-  <script src="admin.js"></script>   
+  <script src="firebase.js"></script> 
+  <script src="admin.js"></script>
+
 </body>
 </html>

@@ -1,22 +1,48 @@
 
 describe("study planner automation", function(){
-    browser.ignoreSynchronization=true; 
+    //browser.ignoreSynchronization=true; 
     browser.manage().timeouts().implicitlyWait(50000);
     it("Go to the Loginpage", function(){
-        //browser.get(" ");
-        browser.get("https://cmsc166v2.firebaseapp.com/");
+        browser.get("C:/Users/Mama Inday/Desktop/study-planner/index.html");
+        //browser.get("https://cmsc166v2.firebaseapp.com/");
         console.log("\tLogin page opened.");
         browser.sleep(1000);
     }); 
     it("Go to admin page", function(){
         var admin = element(by.id("admin-button"));
+        var test1 = element(by.id("cs137"));
+        var test2 = element(by.id("cs125"));
+        browser.sleep(700);
         admin.click();
         console.log("\tAdmin page opened.");
         browser.sleep(1500);
+        browser.actions().mouseMove(element(by.id("cs192"))).perform(); 
+        browser.sleep(700);
+        browser.actions().mouseMove(element(by.id("cs125"))).perform(); 
+        browser.sleep(700);
+        test1.click();
+        browser.sleep(2000);
+        browser.navigate().back(); 
+        browser.sleep(1000);
+        browser.actions().mouseMove(element(by.id("nstp"))).perform(); 
+        browser.sleep(900);
+        browser.executeScript('window.scrollTo(0,0)');
+        browser.sleep(900);
+        browser.actions().mouseMove(element(by.id("cs110"))).perform(); 
+        browser.sleep(700);
+        browser.actions().mouseMove(element(by.id("cs192"))).perform(); 
+        browser.sleep(700);
+        test2.click();
+        browser.sleep(2000);
         browser.navigate().back();
+        browser.sleep(1200);
+        browser.navigate().back();
+        browser.sleep(1700);
         console.log("\tReturned to login");  
+        //var login = element(by.className("firebaseui-idp-button"));
+        //login.click();
     });
-    it("Login", function(){ 
+    /*it("Login", function(){ 
         var login = element(by.className("firebaseui-idp-button"));
         login.click().then(function () { 
             console.log("\tLogging in..."); 
@@ -58,14 +84,16 @@ describe("study planner automation", function(){
         }); 
         //browser.close();
     }); 
+    */
     it("Main test(to edit)", function(){
-        browser.sleep(1200);
+        browser.get("C:/Users/Mama Inday/Desktop/study-planner/main.html");
+        browser.sleep(2100);
        /* browser.executeScript('window.scrollTo(0,document.body.scrollHeight)').then(function(){ 
             browser.sleep(1000);
             browser.executeScript('window.scrollTo(0,0)');
             browser.sleep(700);
         });*/  
-        browser.actions().mouseMove(element(by.id("CMSC-56"))).perform();  
+       /*browser.actions().mouseMove(element(by.id("CMSC-56"))).perform();  
         browser.sleep(700);
         browser.actions().mouseMove(element(by.id("NSTP-2"))).perform(); 
         browser.sleep(700);
@@ -76,9 +104,11 @@ describe("study planner automation", function(){
         browser.actions().mouseMove(element(by.id("CMSC-56"))).perform(); 
         browser.sleep(700);
         browser.actions().mouseMove(element(by.id("avatar"))).perform(); 
-        browser.sleep(700); 
+        browser.sleep(700); */
+        browser.get("C:/Users/Mama Inday/Desktop/study-planner/index.html");
+        browser.sleep(2000);
     });
-    it("logout", function(){
+    /*it("logout", function(){
         //var button = element(by.id("logout"));
         var button = element.all(by.tagName('button')).get(0); 
         button.click().then(function(){
@@ -86,6 +116,6 @@ describe("study planner automation", function(){
         });
         browser.sleep(7000);
         browser.close();
-    });
+    });*/
     
 });

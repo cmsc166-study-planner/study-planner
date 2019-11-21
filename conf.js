@@ -1,18 +1,19 @@
  
 exports.config = {
-    directConnect: true, 
-    /*baseUrl: 'C:/Users/Mama Inday/Desktop/study-planner/login.html',
+    //directConnect: true,  
     onPrepare: function(){
+        browser.ignoreSynchronization = true;
         browser.resetUrl = 'file://';
-    },*/
+    },
     capabilities:{
         'browserName': 'chrome',
         'chromeOptions': {
             'args': [
-                "--allow-running-insecure-content", "--disable-browser-side-navigation"
+                "--allow-running-insecure-content", //"--disable-browser-side-navigation"
+                "allow-file-access-from-files"
             ]
         }
     },
     framework: 'jasmine2',
-    specs: ['test.js']
+    specs: ['uitest.js']
 };
