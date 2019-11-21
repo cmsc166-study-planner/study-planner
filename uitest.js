@@ -4,7 +4,7 @@ describe("study planner automation", function(){
     browser.manage().timeouts().implicitlyWait(50000);
     it("Go to the Loginpage", function(){
         browser.get("C:/Users/Mama Inday/Desktop/study-planner/index.html");
-        //browser.get("https://cmsc166v2.firebaseapp.com/");
+         //browser.get("https://cmsc166v2.firebaseapp.com/");
         console.log("\tLogin page opened.");
         browser.sleep(1000);
     }); 
