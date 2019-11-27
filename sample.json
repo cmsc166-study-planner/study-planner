@@ -1,0 +1,647 @@
+{   "subjects": [
+        {
+            "id": 1,
+            "code": "SAS 1",
+            "sem": 1,
+            "year": 1,
+            "pre-req": "NA"
+        },
+        {
+            "id": 2,
+            "code": "KAS 1",
+            "sem": 1,
+            "year": 1,
+            "pre-req": "NA"
+        },
+        {
+            "id": 3,
+            "code": "CMSC 11",
+            "sem": 1,
+            "year": 1,
+            "pre-req": "NA"
+        },
+        {
+            "id": 4,
+            "code": "CMSC 56",
+            "sem": 1,
+            "year": 1,
+            "pre-req": "NA"
+        },
+        {
+            "id": 5,
+            "code": "MATH 53",
+            "sem": 1,
+            "year": 1,
+            "pre-req": "NA"
+        },
+        {
+            "id": 6,
+            "code": "STAT 123",
+            "sem": 1,
+            "year": 1,
+            "pre-req": "NA"
+        }, 
+         {
+            "id": 7,
+            "code": "PE 2",
+            "sem": 1,
+            "year": 1,
+            "pre-req": "NA"
+        },
+        {
+            "id": 8,
+            "code": "NSTP 1",
+            "sem": 1,
+            "year": 1,
+            "pre-req": "NA"
+        },
+        {
+            "id": 9,
+            "code": "COMM 10",
+            "sem": 2,
+            "year": 1,
+            "pre-req": "NA"
+        },    
+        {
+            "id": 10,
+            "code": "SCIENCE 11",
+            "sem": 2,
+            "year": 1,
+            "pre-req": "NA"
+        }, 
+        {
+            "id": 11,
+            "code": "CMSC 21",
+            "sem": 2,
+            "year": 1,
+            "pre-req": "CMSC 11"
+        }, 
+        {
+            "id": 12,
+            "code": "CMSC 57",
+            "sem": 2,
+            "year": 1,
+            "pre-req": "CMSC 56"
+        }, 
+        {
+            "id": 13,
+            "code": "MATH 54",
+            "sem": 2,
+            "year": 1,
+            "pre-req": "MATH 53"
+        }, 
+        {
+            "id": 14,
+            "code": "PHYSICS 81",
+            "sem": 2,
+            "year": 1,
+            "pre-req": "MATH 53"
+        }, 
+        {
+            "id": 15,
+            "code": "PHYSICS 81.1",
+            "sem": 2,
+            "year": 1,
+            "pre-req": "MATH 53"
+        }, 
+        {
+            "id": 16,
+            "code": "PE 2.1",
+            "sem": 2,
+            "year": 1,
+            "pre-req": "NA"
+        }, 
+        {
+            "id": 17,
+            "code": "NSTP 2",
+            "sem": 2,
+            "year": 1,
+            "pre-req": "NA"
+        }, 
+        {
+            "id": 18,
+            "code": "ETHICS 1",
+            "sem": 1,
+            "year": 2,
+            "pre-req": "NA"
+        },
+        {
+            "id": 19,
+            "code": "CMSC 23",
+            "sem": 1,
+            "year": 2,
+            "pre-req": "CMSC 21"
+        }, 
+        {
+            "id": 20,
+            "code": "CMSC 123",
+            "sem": 1,
+            "year": 2,
+            "pre-req": "CMSC 21/CMSC 57"
+        }, 
+        {
+            "id": 21,
+            "code": "CMSC 130",
+            "sem": 1,
+            "year": 2,
+            "pre-req": "CMSC 11"
+        }, 
+        {
+            "id": 22,
+            "code": "MATH 55",
+            "sem": 1,
+            "year": 2,
+            "pre-req": "MATH 54"
+        }, 
+        {
+            "id": 23,
+            "code": "PHYSICS 82",
+            "sem": 1,
+            "year": 2,
+            "pre-req": "PHYSICS 81"
+        }, 
+        {
+            "id": 24,
+            "code": "PHYSICS 82.1",
+            "sem": 1,
+            "year": 2,
+            "pre-req": "PHYSICS 81"
+        }, 
+        {
+            "id": 25,
+            "code": "PE 2.2",
+            "sem": 1,
+            "year": 2,
+            "pre-req": "NA"
+        },
+        {
+            "id": 26,
+            "code": "ARTS 1",
+            "sem": 2,
+            "year": 2,
+            "pre-req": "NA"
+        },
+        {
+            "id": 27,
+            "code": "MATH 10",
+            "sem": 2,
+            "year": 2,
+            "pre-req": "NA"
+        },  
+        {
+            "id": 28,
+            "code": "CMSC 106",
+            "sem": 2,
+            "year": 2,
+            "pre-req": "STAT 123"
+        },  
+        {
+            "id": 29,
+            "code": "CMSC 127",
+            "sem": 2,
+            "year": 2,
+            "pre-req": "CMSC 123"
+        },  
+        {
+            "id": 30,
+            "code": "CMSC 133",
+            "sem": 2,
+            "year": 2,
+            "pre-req": "CMSC 130"
+        },  
+        {
+            "id": 31,
+            "code": "CMSC 141",
+            "sem": 2,
+            "year": 2,
+            "pre-req": "CMSC 57"
+        },  
+        {
+            "id": 32,
+            "code": "PE 2.3",
+            "sem": 2,
+            "year": 2,
+            "pre-req": "NA"
+        },  
+        {
+            "id": 33,
+            "code": "STS 1",
+            "sem": 1,
+            "year": 3,
+            "pre-req": "NA"
+        },
+        {
+            "id": 34,
+            "code": "GE ELECTIVE 1",
+            "sem": 1,
+            "year": 3,
+            "pre-req": "NA"
+        },
+        {
+            "id": 35,
+            "code": "CMSC 110",
+            "sem": 1,
+            "year": 3,
+            "pre-req": "NA"
+        },
+        {
+            "id": 36,
+            "code": "CMSC 124",
+            "sem": 1,
+            "year": 3,
+            "pre-req": "CMSC 123/CMSC 141"
+        },
+        {
+            "id": 37,
+            "code": "CMSC 128",
+            "sem": 1,
+            "year": 3,
+            "pre-req": "CMSC 123"
+        },
+        {
+            "id": 38,
+            "code": "CMSC 142",
+            "sem": 1,
+            "year": 3,
+            "pre-req": "CMSC 123"
+        },
+        {
+            "id": 39,
+            "code": "CMSC 192",
+            "sem": 1,
+            "year": 3,
+            "pre-req": "NA"
+        },
+        {
+            "id": 40,
+            "code": "CMSC 194.1",
+            "sem": 1,
+            "year": 3,
+            "pre-req": "CMSC 106"
+        },
+        {
+            "id": 41,
+            "code": "GE ELECTIVE 2",
+            "sem": 2,
+            "year": 3,
+            "pre-req": "NA"
+        },
+        {
+            "id": 42,
+            "code": "CMSC 125",
+            "sem": 2,
+            "year": 3,
+            "pre-req": "CMSC 124/CMSC 133"
+        },
+        {
+            "id": 43,
+            "code": "CMSC 129",
+            "sem": 2,
+            "year": 3,
+            "pre-req": "CMSC 128"
+        },
+        {
+            "id": 44,
+            "code": "CMSC 170",
+            "sem": 2,
+            "year": 3,
+            "pre-req": "CMSC 123"
+        },
+        {
+            "id": 45,
+            "code": "CMSC 194.2",
+            "sem": 2,
+            "year": 3,
+            "pre-req": "CMSC 194.1"
+        },
+        {
+            "id": 46,
+            "code": "PI 100",
+            "sem": 2,
+            "year": 3,
+            "pre-req": "NA"
+        },
+        {
+            "id": 47,
+            "code": "ELECTIVE 1",
+            "sem": 2,
+            "year": 3,
+            "pre-req": "NA"
+        },
+        {
+            "id": 48,
+            "code": "CMSC 195",
+            "sem": 3,
+            "year": 3,
+            "pre-req": "CMSC 129"
+        },
+        {
+            "id": 49,
+            "code": "GE ELECTIVE 3",
+            "sem": 1,
+            "year": 4,
+            "pre-req": "NA"
+        },
+        {
+            "id": 50,
+            "code": "CMSC 137",
+            "sem": 1,
+            "year": 4,
+            "pre-req": "CMSC 125/CMSC 133"
+        },
+        {
+            "id": 51,
+            "code": "CMSC 173",
+            "sem": 1,
+            "year": 4,
+            "pre-req": "CMSC 170"
+        },
+        {
+            "id": 52,
+            "code": "CMSC 198.1",
+            "sem": 1,
+            "year": 4,
+            "pre-req": "CMSC 194.2"
+        },
+        {
+            "id": 53,
+            "code": "ELECTIVE 2",
+            "sem": 1,
+            "year": 4,
+            "pre-req": "NA"
+        },
+        {
+            "id": 54,
+            "code": "ELECTIVE 3",
+            "sem": 1,
+            "year": 4,
+            "pre-req": "NA"
+        },
+        {
+            "id": 55,
+            "code": "GE ELECTIVE 4",
+            "sem": 2,
+            "year": 4,
+            "pre-req": "NA"
+        },
+        {
+            "id": 56,
+            "code": "CMSC 134",
+            "sem": 2,
+            "year": 4,
+            "pre-req": "CMSC 123/CMSC 137"
+        },
+        {
+            "id": 57,
+            "code": "CMSC 196",
+            "sem": 2,
+            "year": 4,
+            "pre-req": "CMSC 128"
+        },
+        {
+            "id": 58,
+            "code": "CMSC 198.2",
+            "sem": 2,
+            "year": 4,
+            "pre-req": "CMSC 198.1"
+        },
+        {
+            "id": 59,
+            "code": "ELECTIVE 4",
+            "sem": 2,
+            "year": 4,
+            "pre-req": "NA"
+        },
+        {
+            "id": 60,
+            "code": "FREE ELECTIVE",
+            "sem": 2,
+            "year": 4,
+            "pre-req": "NA"
+        }
+
+    ],
+    "grades": [
+        {
+            "id": 1,
+            "name": "Franklin Okiya",
+            "gradeItem": [
+                {
+                    "course": "CMSC 11",
+                    "description": "Intro to Computer Science",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Franklin Okiya",
+            "gradeItem": [
+                {
+                    "course": "SAS 1",
+                    "description": "GE",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Franklin Okiya",
+            "gradeItem": [
+                {
+                    "course": "KAS 1",
+                    "description": "GE",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Franklin Okiya",
+            "gradeItem": [
+                {
+                    "course": "CMSC 56",
+                    "description": "Discrete Math. Struct. in CS 1",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        { 
+            "id": 5,
+            "name": "Franklin Okiya",
+            "gradeItem": [
+                {
+                    "course": "MATH 53",
+                    "description": "X",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "5.00"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Franklin Okiya",
+            "gradeItem": [
+                {
+                    "course": "STAT 123",
+                    "description": "x",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "exonotmessi",
+            "gradeItem": [
+                {
+                    "course": "PE 2",
+                    "description": "X",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "2.00"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "exonotmessi",
+            "gradeItem": [
+                {
+                    "course": "NSTP 1",
+                    "description": "",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "exonotmessi",
+            "gradeItem": [
+                {
+                    "course": "CMSC 11",
+                    "description": "Intro to Computer Science",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "exonotmessi",
+            "gradeItem": [
+                {
+                    "course": "CMSC 130",
+                    "description": "Logic Des.Dig. Comp. Circuits",
+                    "term": "Second Semester 2016-2017",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "exonotmessi",
+            "gradeItem": [
+                {
+                    "course": "CMSC 133",
+                    "description": "X",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "exonotmessi",
+            "gradeItem": [
+                {
+                    "course": "MATH 53",
+                    "description": "X",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "5.00"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Jayfer Comparativo",
+            "gradeItem": [
+                {
+                    "course": "CMSC 11",
+                    "description": "Intro to Computer Science",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Jayfer Comparativo",
+            "gradeItem": [
+                {
+                    "course": "CMSC 21",
+                    "description": "X",
+                    "term": "Second Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Jayfer Comparativo",
+            "gradeItem": [
+                {
+                    "course": "CMSC 130",
+                    "description": "X",
+                    "term": "First Semester",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Jayfer Comparativo",
+            "gradeItem": [
+                {
+                    "course": "CMSC 23",
+                    "description": "X",
+                    "term": "First Semester",
+                    "grade": "2.00",
+                    "units": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Jayfer Comparativo",
+            "gradeItem": [
+                {
+                    "course": "MATH 53",
+                    "description": "X",
+                    "term": "First Semester 2014-2015",
+                    "grade": "2.00",
+                    "units": "5.00"
+                }
+            ]
+        }
+    ]
+}

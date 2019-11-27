@@ -1,0 +1,17 @@
+language: node_js 
+
+node_js:
+  - "stable"
+ 
+cache: 
+  directories:
+    - "node_modules"
+    
+notifications:
+  email: 
+    recipients:
+      - jayfr.dc@gmail.com
+      - jfcomparativo@up.edu.ph
+    
+    on_success: always
+    on_failure: always
