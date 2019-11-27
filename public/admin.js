@@ -2,26 +2,7 @@
 var counter = 0;
 const dbRef = firebase.database().ref(); 
 var count = 0;
-
-
-var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".trigger");
-var closeButton = document.querySelector(".close-button");
-
-function toggleModal() {
-    modal.classList.toggle("show-modal");
-}
-
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
-}
-
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
+var rows = document.getElementById("courserows");
 
 dbRef.child("students").once('value', function (snapshot){
 	let students = snapshot.val();
@@ -77,4 +58,26 @@ function studentList(course){
 		location.href = 'list.html?course='+course;
 	}
 	//window.location = '/list.html?course='+course;
+} 
+function isInt(string){
+	return parseInt(string, 10) != NaN;
 }
+	
+rows.addEventListener("mouseenter", function(event){
+	event.target.style.color = "purple";
+	setTimeout(function(){
+		event.target.style.color = ""; 
+	}, 500);
+}, false); 
+
+rows.addEventListener("mouseover", function(event){   
+	
+	if(isNaN(parseInt(event.target.innerHTML))){ 
+		event.target.style.backgroundColor = "#8490f1";
+		event.target.style.color = "white";
+		setTimeout(function(){
+			event.target.style.backgroundColor = "";
+			event.target.style.color = "#808080";
+		}, 700); 
+	}
+}, false);
