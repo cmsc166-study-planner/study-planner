@@ -10,7 +10,7 @@ directories:
 jobs:
   include:
     - stage: test
-      script: ./public/test 
+      script: ./public/test/test.js
 
 notifications:
   email: 
