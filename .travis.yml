@@ -3,8 +3,11 @@ sudo: false
 language: node_js 
 
 node_js:
-  - node
-
+ — “0.10"
+install: 
+ — npm install -g mocha 
+before_script: 
+ — sleep 5 # give gulp background task some time to execute. 
 script: 
   - npm test
 cache: 
