@@ -1,16 +1,19 @@
+sudo: false
+
 language: node_js 
 
 node_js:
-  - "stable"
+  - node
 
+install:
+  - npm ci
+
+script: 
+  - npm test
 cache: 
 directories:
   - "node_modules"
-    
-jobs:
-  include:
-    - stage: test
-      script: ./public/test/test.js
+     
 
 notifications:
   email: 
