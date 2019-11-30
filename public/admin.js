@@ -58,34 +58,20 @@ function studentList(course){
 		location.href = 'list.html?course='+course;
 	}
 	//window.location = '/list.html?course='+course;
-}  
-	
-/*rows.addEventListener("mouseenter", function(event){
-	if(isNaN(parseInt(event.target.innerHTML))){ 
-		event.target.style.color = "purple";
-		setTimeout(function(){
-			event.target.style.color = ""; 
-		}, 300);
-	}
-	else{
-
-	}
-}, false); */
+}   
 
 rows.addEventListener("mouseover", function(event){   
 	
-	if(isNaN(parseInt(event.target.innerHTML))){ 
-		console.log(event.target.innerHTML);
+	if(isNaN(parseInt(event.target.innerHTML))){  
 		event.target.style.backgroundColor = "#8490f1";
-		event.target.style.color = "white";
-		setTimeout(function(){
-			event.target.style.backgroundColor = "";
-			event.target.style.color = "#808080";
-		}, 700); 
-	}
-	else{
-		console.log("supposedly no highlight");
+		event.target.style.color = "white"; 
+	} 
+}, false);
+
+rows.addEventListener("mouseout", function(event){   
+	
+	if(isNaN(parseInt(event.target.innerHTML))){  
 		event.target.style.backgroundColor = "";
-		event.target.style.color = "#808080";
-	}
+		event.target.style.color = ""; 
+	} 
 }, false);
