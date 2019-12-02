@@ -9,11 +9,11 @@ node_js: '9'
 
 before_script: npm install -g npm@5.8.0
 
-before_install: "|
+before_install: |
   [[ ! -x ~/npm/node_modules/.bin/npm ]] && {
     cd ~/npm && npm install npm
     cd -
-  } || true"
+  } || true
 env: PATH=~/npm/node_modules/.bin:$PATH
 cache:
   directories:
