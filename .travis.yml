@@ -1,9 +1,3 @@
-stages:
-  - smoke # this ensures a "user" install works properly
-  - precache # warm up cache for default Node.js version
-  - lint # lint code and docs
-  - test # all tests
-
 language: node_js
 node_js: '9'
 
