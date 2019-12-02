@@ -1,6 +1,9 @@
- language: node_js
-node_js:
-  - "stable"
+language: node_js
+node_js: '9'
+
+before_script: npm install -g npm@5.8.0
+install: npm ci  
+
 
 script: npm test
  
