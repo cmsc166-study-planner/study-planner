@@ -4,11 +4,29 @@
   <title>Course Details</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" type = "text/css" href="css/list.css"> 
 </head>
 <body> 
 
   <p id="course_name"></p>
   <ul id="studentList"></ul>
+  <div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">  
+					<table class= table>
+						<thead>
+							<tr class="row100 head"> 
+								<th class="column100 column2" data-column="column2">Name</th>
+								<th class="column100 column3" data-column="column3">Student No</th> 
+							</tr>
+						</thead>
+						<tbody id="student-rows">
+                 
+						</tbody>
+          </table> 
+			</div>
+		</div>
+	</div>
 
   <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>  

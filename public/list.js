@@ -15,6 +15,7 @@ document.getElementById('course_name').innerHTML = mycourse;
 
 const studentListUI = document.getElementById("studentList");
 
+var tableBody = document.getElementById("student-rows");
 dbRef.child("students").once('value', function (snapshot){
 	let student_obj = snapshot.val();
 	for(let key in student_obj){
@@ -32,10 +33,19 @@ dbRef.child("students").once('value', function (snapshot){
 						}					
 					}
 					if(flag == 0){
-						let $li = document.createElement("li");
-						$li.innerHTML = student_obj[key].name;
-						studentListUI.append($li);
+						//let $li = document.createElement("li");
+						//$li.innerHTML = student_obj[key].name;
+						//studentListUI.append($li);
 						//console.log(student_obj[key].name);
+						var tr = document.createElement('TR');
+						var name = document.createElement('TD');
+						var no = document.createElement('TD');
+						name.appendChild(document.createTextNode(student_obj[key].name));  
+						console.log(student_obj[key].name);
+						no.appendChild(document.createTextNode(" data "));  
+						tr.appendChild(name);  
+						tr.appendChild(no);
+						tableBody.appendChild(tr);
 					}
 					flag = 0;
 				});
