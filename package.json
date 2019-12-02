@@ -1,0 +1,22 @@
+{
+  "name": "study-planner",
+  "version": "1.0.0",
+  "description": "A simple Study Planner",
+  "main": "conf.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmsc166-study-planner/study-planner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmsc166-study-planner/study-planner/issues"
+  },
+  "homepage": "https://github.com/cmsc166-study-planner/study-planner#readme",
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  }
+}
