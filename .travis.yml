@@ -2,5 +2,5 @@
 node_js:
   - "stable"
 
-script: test
+script: npm test
  
