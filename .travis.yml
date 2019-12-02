@@ -4,5 +4,15 @@ node_js: '9'
 before_script: npm install -g npm@5.8.0 
 
 
-script: npm start
+- &smoke
+  stage: smoke
+  install: npm install --production --no-shrinkwrap
+  script: >
+    ./bin/mocha --opts /dev/null --reporter spec 
+    test/sanity/sanity.spec.js
+  cache:
+    directories:
+      - ~/.npm
+      - node_modules
+ 
  
