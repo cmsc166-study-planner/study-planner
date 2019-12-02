@@ -1,13 +1,4 @@
- stages: 
-  - smoke 
-  - precache
-  - lint
-  - test
-
-language: node_js
-node_js: '9'
-
-before_script: npm install -g npm@5.8.0
-
-install: npm ci --ignore-scripts
+ language: node_js
+node_js:
+  - "stable"
  
