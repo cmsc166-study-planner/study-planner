@@ -68,10 +68,7 @@ rows.addEventListener("mouseover", function(event){
 	} 
 }, false);
 
-rows.addEventListener("mouseout", function(event){   
-	
-	if(isNaN(parseInt(event.target.innerHTML))){  
-		event.target.style.backgroundColor = "";
-		event.target.style.color = ""; 
-	} 
+rows.addEventListener("mouseout", function(event){  
+	event.target.style.backgroundColor = "";
+	event.target.style.color = "";  
 }, false);
