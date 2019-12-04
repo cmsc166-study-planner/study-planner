@@ -3,63 +3,7 @@ body {
     margin: 0;
     background: #e6e7e4;
   } 
-  /*-- forms --*/
-  .control-label{
-    color: white;
-  } 
-  .overlay button, .description button {
-    border:1px solid #459afa; 
-    border-radius: 0;
-    color:#fff;
-  }
-  .overlay button:hover, .description button:hover  {
-    border:1px solid #fff;
-    background:rgb(183, 197, 247);
-    color:#000;
-  } 
-  .features {
-    margin: 4em auto;
-    padding: 1em;
-    position: relative;
-  }
-  .feature-title {
-    color: #333;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  .features img {
-    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    margin-bottom: 16px;
-  } 
-  @media (max-width: 575.98px) {
-    .description {
-      left: 0;
-      padding: 0 15px;
-      position: absolute;
-      top: 10%;
-      transform: none;
-      text-align: center;
-    }
-    
-    .description h1 {
-      font-size: 2em;
-    }
-    
-    .description p {
-      font-size: 1.2rem;
-    }
-    
-    .features {
-      margin: 0;
-    }
-  }
-  .label{
-    color:whitesmoke 
-  }
+  
   .dataTables_filter {
     display:inline;   
    }

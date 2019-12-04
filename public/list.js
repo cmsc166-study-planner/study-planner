@@ -11,8 +11,7 @@ var flag = 0;
 var mycourse = getUrlVars()["course"];
 //console.log(mycourse);
 mycourse = mycourse.replace(/-/g, ' ');
-document.getElementById('course_name').innerHTML = mycourse;
-
+document.getElementById('course-name').innerHTML = mycourse;  
 const studentListUI = document.getElementById("studentList");
 
 var tableBody = document.getElementById("student-rows");
