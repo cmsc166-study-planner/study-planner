@@ -1,3 +1,13 @@
+/*const app = document.getElementById('root');
+const logo = document.createElement('img');
+logo.src = "imgs/up.png";
+
+const container = document.createElement('div');
+container.setAttribute('class', 'container');
+
+app.appendChild(logo);
+app.appendChild(container);*/
+
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
